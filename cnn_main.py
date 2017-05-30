@@ -175,14 +175,11 @@ train_step = tf.train.AdamOptimizer(1e-4).minimize(cross_entropy)
 correct_prediction = tf.equal(tf.argmax(y_conv,1), tf.argmax(y_,1))
 model_accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 
-#sess.run(tf.initialize_all_variables())
-
 print("\n#########################\nExecuting Experiments\n#########################")
-
 
 for index in range(NUMBER_OF_EXPERIMENTS):
     print("\n#########################\nExperiment", index+1, "of", NUMBER_OF_EXPERIMENTS, "\n#########################")
-    sess.run(tf.initialize_all_variables())
+    sess.run(tf.global_variables_initializer())
     result = ConvNetSVM()
     print("\n", result)
 
