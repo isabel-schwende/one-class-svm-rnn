@@ -16,7 +16,6 @@
 
 import tensorflow as tf
 import numpy as np
-import pandas as pd
 from tensorflow.examples.tutorials.mnist import input_data
 # TO-DO change to one-class SVM
 from sklearn import svm
