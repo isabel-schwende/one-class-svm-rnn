@@ -13,6 +13,16 @@ and multi-class SVM for CNN:
 
 https://github.com/dlmacedo/SVM-CNN
 
+
+c++ implementation for one-class-svm for new layer can be either 
+
+libsvm
+
+or this code that only offers RBF kernel for the one-class-SVM
+
+http://dlib.net/ml.html#svm_one_class_trainer 
+
+
 Author: Isabel Schwende
 
 For Leapmind Inc
